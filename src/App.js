@@ -2,6 +2,7 @@ import './App.css';
 import Header from './components/header.js';
 import Home from './components/home.js';
 import Login from './components/login.js';
+import Register from './components/register.js';
 import Gallery from './components/gallery.js';
 import Product from './components/product.js';
 import Cart from './components/cart.js';
@@ -16,6 +17,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 /*
 TODO: Check if nested route renders as <Gallery><Product /></Gallery>
 Don't want that! Just <Product>
+
+Need redirection between register and login pages
 */
 
 function App() {
@@ -26,6 +29,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
           <Route path="/products">
             <Route path=":id" element={<Product />} />
             <Route index element={<Gallery />} />
