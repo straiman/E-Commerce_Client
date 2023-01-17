@@ -2,7 +2,7 @@ import React from 'react';
 
 import Container from 'react-bootstrap/Container';
 
-function Account(props) {
+function Register(props) {
     return <Container></Container>;
 }
-export default Account;
+export default Register;
